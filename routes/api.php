@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmailNotificationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ResumeController;
@@ -22,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('portfolio')->group(function () {
     Route::post('sendmail', [ResumeController::class, 'store']);
 });
+
+Route::post('mail-notificaton',[ EmailNotificationController::class, 'store']);

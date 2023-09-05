@@ -5,7 +5,7 @@ const Skills = () => {
         <section id="skills" className="d-flex align-items-center py-5">
             <div className="container">
                 <div className="section-title">
-                        <p style={{  fontWeight: "bold" }}>Problem solving needs great skills, attention to detail, critical thinking and ability to follow through! Listed are my key skills.</p>
+                        <p style={{  fontWeight: "bold" }}>Problem solving needs great skills, attention to detail, critical thinking and ability to follow through! Listed below are my key skills.</p>
                 </div>
                 {/* <div className="card" style={{ padding: '10px', marginBottom: '10px' }}>  </div> */}
                 <div className="row skills-content">

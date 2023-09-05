@@ -5,9 +5,9 @@ const About = () => {
     return (
         <section id="about" className="d-flex align-items-center py-5">
             <div className="container">
-                <div className="section-title">
-                    <p style={{ fontWeight: "bold" }}>I am a passionate full stack web developer and a
-                        graduate of Computer Science with 2+ years experience. Always ready to learn, explore technology and to provide best backend and frontend services.</p>
+            <div className="section-title">
+                    <p style={{ fontWeight: "bold" }}>Passionate full stack web developer and a
+                        graduate of Computer Science with 2+ years experience. Ready to learn, explore current technologies, provide best backend and frontend services.</p>
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
@@ -44,7 +44,7 @@ const About = () => {
                         </div>
                         <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
                             <p style={{ fontWeight: "bold" }}>
-                                Contributing to SEO friendly and optimized Backend systems to your current team is my inspiration. Currently,  working on Resume builder open source project with the Role Nuxt js Frontend designer.
+                                Contributing to SEO friendly and optimized Backend systems to your current team is my inspiration. 
                             </p>
                         </div>
                     </div>

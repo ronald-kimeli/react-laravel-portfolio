@@ -4,9 +4,6 @@ const Resume = () => {
     return (
         <section id="resume" className="d-flex align-items-center py-5 resume">
             <div className="container">
-                <div className="section-title">
-                    <p style={{ fontWeight: "bold" }}>Resume</p>
-                </div>
                 <div className="row">
                     <div className="col-lg-6">
                         <h3 className="resume-title">Summary</h3>

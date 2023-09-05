@@ -8,7 +8,7 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-secondary sticky-top shadow">
       <Container fluid>
-        <Navbar.Brand><NavLink to="/" className='btn btn-about'>Ronald </NavLink></Navbar.Brand>
+        <Navbar.Brand><NavLink to="/" className='btn btn-about'>Ronald Kimeli</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
