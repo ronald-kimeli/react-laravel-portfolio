@@ -9,7 +9,7 @@ const Home = () => {
                     <h1 className='text-center mb-4' style={{ color: "#34b7a7" }}>Ronald Kimeli</h1>
                     <h2 className='text-center'>I'm a {' '}<span className="auto-input" style={{ font: "bold", color: "#34b7a7" }}>
                         <Typewriter
-                            words={['Full Stack  Developer', 'Backend Web Developer', 'DevOps Engineer']}
+                            words={['Full Stack Web Developer', 'Backend Web Developer', 'DevOps Engineer']}
                             loop={5}
                             cursor
                             cursorStyle='!'
