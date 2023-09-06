@@ -26,7 +26,7 @@ function Header() {
           </Nav>
           <div className="d-grid gap-1 d-md-flex justify-content-md-end">
             <NavLink to="https://www.linkedin.com/in/ronald-kimeli" className="btn me-md-2 site-link"><i className="bi bi-linkedin"/></NavLink>
-            <NavLink to="/allow" className="btn site-link"><i className="bi bi-git" /></NavLink>
+            <NavLink to={'https://github.com/ronald-kimeli'} className="btn site-link"><i className="bi bi-git" /></NavLink>
           </div>
         </Navbar.Collapse>
       </Container>

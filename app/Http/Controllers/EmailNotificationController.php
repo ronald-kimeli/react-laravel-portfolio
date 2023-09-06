@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Traits\MakeMail;
 use Illuminate\Http\Request;
 use App\Models\EmailNotification;
 use Illuminate\Support\Facades\Validator;
 
 class EmailNotificationController extends Controller
 {
+
+    use MakeMail;
     /**
      * Display a listing of the resource.
      */
@@ -28,30 +31,41 @@ class EmailNotificationController extends Controller
             'message' => 'required|max:191'
         ]);
 
-        if ($validator->fails())
-         {
-            $errors = implode(" ", $validator->errors()->all());
-            return response(['status' => 'error', 'message' => $errors]);
-         }
+        if ($validator->fails()) {
+            return response(['status' => 'error', 'message' => $validator->errors()],422);
+        }
 
-            $notification = new EmailNotification; 
-            if ($notification)
-              {
-                $notification->name = $request->name;
-                $notification->email = $request->email;
-                $notification->subject = $request->subject;
-                $notification->message = $request->message;
-                $notification->save();
-    
-                return response()->json(['message' => 'notification Added Successfully'], 200);
-              }
-            else
-                {
-                    return response()->json(['status' => 'error', 'message' => 'Technical error ocurred , contact administrator.'], 404);
-                }  
-        
-        
+        $notification = new EmailNotification;
+
+        if ($notification) {
+            $notification->name = $request->name;
+            $notification->email = $request->email;
+            $notification->subject = $request->subject;
+            $notification->message = $request->message;
+            $notification->save();
+
+            //Implement sending gmail
+
+            $mail_template = $this->emailTemplate($request->name, $request->subject);
+            $mail_password = "xjssirazbecywkjg";
+            $SMTP_username = "leavemanagement254@gmail.com";
+
+            $feedback = $this->sendMailNotification($request->email, $request->subject, $mail_password, $mail_template, $SMTP_username);
+
+            if($feedback == 'Message has been sent'){
+                return response()->json(['status' => 'success', 'message' => 'Email sent successfully'], 200);
+            }else{
+                return response()->json(['status' => 'error', 'message' => $feedback], 400);
+            }
+
+
+        } else {
+            return response()->json(['status' => 'error', 'message' => 'Technical error ocurred , contact administrator.'], 404);
+        }
+
+        //End here
     }
+
 
     /**
      * Display the specified resource.
