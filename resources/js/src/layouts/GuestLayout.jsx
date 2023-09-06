@@ -1,18 +1,17 @@
-import { Outlet } from "react-router-dom"
-import Footer from "../Includes/Footer"
-import Navbar from "../Includes/Navbar"
-
+import { Outlet } from "react-router-dom";
+import Footer from "../Includes/Footer";
+import Navbar from "../Includes/Navbar";
 
 const GuestLayout = () => {
-  return (
-    <>
-        <Navbar />
+    return (
+        <>
+            <Navbar />
 
-        <Outlet />
+            <Outlet />
 
-        {/* <Footer /> */}
-    </>
-  )
-}
+            {/* <Footer /> */}
+        </>
+    );
+};
 
-export default GuestLayout
+export default GuestLayout;
