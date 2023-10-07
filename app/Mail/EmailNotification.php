@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\EmailNotification as ModelsEmailNotification;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
@@ -14,7 +15,8 @@ class EmailNotification extends Mailable
 {
     use Queueable, SerializesModels;
 
-    private $data = [];
+    public $data;
+
     /**
      * Create a new message instance.
      */
@@ -29,7 +31,7 @@ class EmailNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: "am",
+            subject: $this->data->subject,
         );
     }
 
@@ -39,7 +41,7 @@ class EmailNotification extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'welcome',
+            view: 'emails.notification',
         );
     }
 

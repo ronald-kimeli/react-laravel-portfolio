@@ -38,30 +38,27 @@ trait MakeMail
         $mail = new PHPMailer(true);
 
         try {
-        //Server settings
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username = $SMTP_username; //SMTP username
-        $mail->Password = $mail_password;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+            //Server settings
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username = $SMTP_username; //SMTP username
+            $mail->Password = $mail_password;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
 
-        $mail->addAddress($ReceiverEmail);
+            $mail->addAddress($ReceiverEmail);
 
-        //Content
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body = $mail_template;
+            //Content
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body = $mail_template;
 
-        $mail->send();
+            $mail->send();
 
-        return 'Message has been sent';
-        // echo 'Message has been sent';
-    } catch (Exception $e) {
-        return "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            return 'Message has been sent';
+        } catch (Exception $e) {
+            return "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
     }
-    }
-
 }
