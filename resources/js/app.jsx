@@ -23,6 +23,7 @@ import Projects from './src/pages/Projects';
 import NotFound from './src/pages/NotFound';
 import Contact from './src/pages/Contact';
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
             {
                 path: "contact",
                 element: <Contact />,
-            },
+            }
         ],
     },
     {
