@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import rony from '../img/rony.jpg';
 
 const About = () => {
     return (
         <section id="about" className="d-flex align-items-center py-5">
             <div className="container">
-            <div className="section-title">
+                <div className="section-title">
                     <p style={{ fontWeight: "bold" }}>Passionate full stack web developer and a
-                        graduate of Computer Science with 2+ years experience. Ready to learn, explore current technologies, provide best backend and frontend services.</p>
+                        graduate of Computer Science with 3+ years experience. Ready to learn, explore current technologies, provide best backend and frontend services.</p>
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
@@ -17,11 +17,11 @@ const About = () => {
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content">
                         <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
-                            <h3 style={{ fontWeight: 'bold', textTransform: "capitalize" }}>Full Stack Web Developer</h3>
+                            <h3 style={{ fontWeight: 'bold', textTransform: "capitalize" }}>Full Stack Developer(Backend Heavy)</h3>
                         </div>
                         <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
                             <p style={{ fontWeight: 'bold' }}>
-                                Experienced in PHP/Laravel and Python/Django as Backend, Nuxt js, Vue js, React js, jQuery as frontend technology.I have worked extensively with HTML, CSS, JavaScript and Python.
+                                Experienced PHP/Laravel Backend developer with Nuxt/Vue js, React js, jQuery frontend technologies.I have worked extensively with HTML, CSS, JavaScript and Python.
                             </p>
                         </div>
                         <div className="card" style={{ marginBottom: '10px' }}>
@@ -44,7 +44,7 @@ const About = () => {
                         </div>
                         <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
                             <p style={{ fontWeight: "bold" }}>
-                                Contributing to SEO friendly and optimized Backend systems to your current team is my inspiration. 
+                                Contributing to SEO friendly and optimized Backend systems to your current team is my inspiration.
                             </p>
                         </div>
                     </div>
