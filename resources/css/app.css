@@ -1358,3 +1358,30 @@ h6 {
 .error {
     color: #d8000c;
 }
+
+
+/* Add this CSS to your stylesheet */
+.icon-box {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-box h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box p {
+    font-size: 16px;
+  }
+  
+  /* Grow on hover effect */
+  .grow-on-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
