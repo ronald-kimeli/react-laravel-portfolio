@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import rony from '../img/rony.jpg';
 
 const About = () => {
@@ -15,8 +15,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content">
-                        <div className="card" style={{ marginBottom: '10px', border: '1px solid #dee2e6' }}>
-                            <h3 style={{ fontWeight: 'bold', textTransform: "capitalize", textAlign: 'center' }}>Full-stack Web Developer (Backend Heavy)</h3>
+                        <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
+                            <h3 style={{ fontWeight: 'bold', textTransform: "capitalize" }}>Full Stack Web Developer</h3>
                         </div>
                         <div className="card" style={{ marginBottom: '10px', border: '1px solid #dee2e6' }}>
                             <p style={{ fontWeight: 'bold', textAlign: 'center' }}>
