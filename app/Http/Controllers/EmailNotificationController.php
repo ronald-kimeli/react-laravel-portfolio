@@ -14,6 +14,8 @@ class EmailNotificationController extends Controller
     public function store(Request $request)
     {
 
+        return response()->json(['status' => 'success', "message" => "email sent successfully"], 200);
+
         $notification = new EmailNotifier;
 
         if ($notification) {

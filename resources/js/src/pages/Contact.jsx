@@ -31,7 +31,7 @@ export default function Contact() {
             >
                 <div className="container">
                     <div className="section-title">
-                        <p style={{ fontWeight: "bold" }}>Let's talk!</p>
+                        <span style={{ fontWeight: "bold" }}>Let's talk!</span>
                     </div>
 
                     <div className="row mt-5">
@@ -40,19 +40,19 @@ export default function Contact() {
                                 <div className="address">
                                     <i className="bi bi-geo-alt" />
                                     <h4>Location</h4>
-                                    <p>Nairobi, Kenya</p>
+                                    <span>Nairobi, Kenya</span>
                                 </div>
 
                                 <div className="email">
                                     <i className="bi bi-envelope" />
                                     <h4>Email</h4>
-                                    <p>kimeliryans@gmail.com</p>
+                                    <span>kimeliryans@gmail.com</span>
                                 </div>
 
                                 <div className="phone">
                                     <i className="bi bi-phone" />
                                     <h4>Call</h4>
-                                    <p>+254 798 298834</p>
+                                    <span>+254 798 298834</span>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export default function Contact() {
                                             {...register("name", { required: true })}
                                             aria-invalid={errors.name ? "true" : "false"}
                                         />
-                                        {errors.name?.type === 'required' && <p className="error" role="alert">Name is required</p>}
+                                        {errors.name?.type === 'required' && <span className="error" role="alert">Name is required</span>}
                                     </div>
                                     <div className="col-md-6 form-group mt-3 mt-md-0">
                                         <input
@@ -87,7 +87,7 @@ export default function Contact() {
                                             })}
                                             aria-invalid={errors.email ? "true" : "false"}
                                         />
-                                        {errors.email && <p className="error" role="alert">{errors.email?.message}</p>}
+                                        {errors.email && <span className="error" role="alert">{errors.email?.message}</span>}
                                     </div>
                                 </div>
                                 <div className="form-group mt-3">
@@ -100,7 +100,7 @@ export default function Contact() {
                                         {...register("subject", { required: true })}
                                         aria-invalid={errors.subject ? "true" : "false"}
                                     />
-                                    {errors.subject?.type === 'required' && <p className="error" role="alert">Subject is required</p>}
+                                    {errors.subject?.type === 'required' && <span className="error" role="alert">Subject is required</span>}
                                 </div>
                                 <div className="form-group mt-3">
                                     <textarea
@@ -112,7 +112,7 @@ export default function Contact() {
                                         {...register("message", { required: true })}
                                         aria-invalid={errors.message ? "true" : "false"}
                                     />
-                                    {errors.message?.type === 'required' && <p className="error" role="alert">Message is required</p>}
+                                    {errors.message?.type === 'required' && <span className="error" role="alert">Message is required</span>}
                                 </div>
 
                                 <div className="my-3">
@@ -133,6 +133,5 @@ export default function Contact() {
                 </div>
             </section>
         </>
-
     );
 }

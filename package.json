@@ -20,10 +20,6 @@
         "react-bootstrap": "^2.9.1",
         "react-hook-form": "^7.47.0",
         "react-simple-typewriter": "^5.0.1",
-<<<<<<< HEAD
         "sass": "1.64.2"
-=======
-        "sass": "^1.69.5"
->>>>>>> 1aec3bbc80726ecac5ee8268fe282a8a827b4f08
     }
 }

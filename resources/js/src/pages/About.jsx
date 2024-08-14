@@ -27,15 +27,15 @@ const About = () => {
                             <div className="row" style={{ margin: '4px' }}>
                                 <div className="col-lg-6">
                                     <ul>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Level:</strong> Degree </li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Phone:</strong> +254 798 298834</li>
+                                        <li><i className="bi bi-rounded-right" /> <strong>Name: </strong>Ronald Kimeli</li>
+                                        <li><i className="bi bi-rounded-right" /> <strong>Education Level:</strong> Degree</li>
                                         <li><i className="bi bi-rounded-right" /> <strong>Email:</strong> kimeliryans@gmail.com</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
+                                    <li><i className="bi bi-rounded-right" /> <strong>Phone:</strong> +254 798 298834</li>
                                         <li><i className="bi bi-rounded-right" /> <strong>Degree:</strong> Computer Science</li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Freelance:</strong> Available</li>
                                         <li><i className="bi bi-rounded-right" /> <strong>City:</strong> Nairobi, Kenya</li>
                                     </ul>
                                 </div>

@@ -17,11 +17,11 @@ function Header() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <NavLink to="/" className='btn btn-about'> Home </NavLink>
-                        <NavLink to="/about" className='btn btn-about'> About </NavLink>
+                        <NavLink to="/" className='btn btn-about'> About </NavLink>
+                        {/* <NavLink to="/about" className='btn btn-about'> About </NavLink> */}
                         <NavLink to="/skills" className='btn btn-about'> Skills </NavLink>
                         <NavLink to="/services" className='btn btn-about'> Services </NavLink>
-                            {/* <NavLink to="/projects" className='btn btn-about'> Projects </NavLink> */}
+                        <NavLink to="/projects" className='btn btn-about'> Projects </NavLink>
                         <NavLink to="/resume" className='btn btn-about'> Resume </NavLink>
                         <NavLink to="/contact" className='btn btn-about'> Contact </NavLink>
                     </Nav>
