@@ -1,0 +1,48 @@
+/* Basic card styling */
+.project-card {
+  transition: transform 0.3s ease !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.project-card:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+.project-card img {
+  object-fit: cover !important;
+  height: 200px !important;
+}
+
+.project-card img {
+  object-fit: cover !important;
+}
+
+.project-link {
+  text-decoration: none !important;
+  color: #007bff !important; /* Bootstrap primary color */
+}
+
+.project-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Additional styles if needed */
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.project-link {
+  text-decoration: none !important;
+  color: #007bff !important; /* Bootstrap primary color */
+}
+
+.project-link:hover {
+  text-decoration: underline !important;
+}

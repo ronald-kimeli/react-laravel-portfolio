@@ -3,13 +3,10 @@ import Projects from '../pages/Projects';
 import NotFound from '../pages/NotFound';
 import Contact from '../pages/Contact';
 import GuestLayout from '../layouts/GuestLayout';
-import Home from '../pages/Home';
 import About from '../pages/About';
 import Resume from '../pages/Resume';
 import Skills from '../pages/Skills';
 import Services from '../pages/Services';
-
-
 
 const router = createBrowserRouter([
     {
@@ -20,10 +17,6 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <About />,
             },
-            // {
-            //     path: "about",
-            //     element: <About />,
-            // },
             {
                 path: "skills",
                 element: <Skills />,

@@ -14,8 +14,6 @@ class EmailNotificationController extends Controller
     public function store(Request $request)
     {
 
-        return response()->json(['status' => 'success', "message" => "email sent successfully"], 200);
-
         $notification = new EmailNotifier;
 
         if ($notification) {
@@ -26,14 +24,12 @@ class EmailNotificationController extends Controller
             $notification->save();
         }
 
-        $data = $request;
-
         try {
             foreach ([$request->email, 'kimeliryans@gmail.com'] as $recipient) {
-                Mail::to($recipient)->send(new EmailNotification($data));
+                Mail::to($recipient)->send(new EmailNotification($request));
             }
 
-            return response()->json(['status' => 'success', "message" => "email sent successfully"], 200);
+            return response()->json(['status' => 'success', "message" => "Your message has been sent. Thank you!"], 200);
         } catch (Exception $e) {
             return response()->json(['status' => 'error', 'message' => $e->getMessage()], 400);
         }

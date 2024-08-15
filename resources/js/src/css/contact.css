@@ -1,0 +1,44 @@
+.info {
+    background: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.info .address, .info .email, .info .phone {
+    margin-bottom: 15px !important;
+}
+
+.info i {
+    font-size: 24px !important;
+    color: #007bff !important;
+    margin-right: 10px !important;
+}
+
+.form-control {
+    border-radius: 5px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px !important;
+}
+
+.form-group {
+    margin-bottom: 15px !important;
+}
+
+.error, .status-message {
+    color: red;
+    font-size: 0.75em; /* Reduced font size for better readability */
+    text-align: center;
+}
+
+.success.sent-message {
+    color: green;
+    font-size: 0.75em; /* Matching font size with error messages */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 100% !important;
+    }
+}

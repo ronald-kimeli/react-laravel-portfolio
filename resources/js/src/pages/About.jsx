@@ -1,57 +1,62 @@
-import React from 'react'
+import React from 'react';
 import rony from '../img/rony.jpg';
+import aboutData from '../storeData/aboutData';
 
 const About = () => {
+    const data = aboutData[0];
     return (
-        <section id="about" className="d-flex align-items-center py-5">
+        <section id="about" className="about-section d-flex align-items-center py-5">
             <div className="container">
-                <div className="section-title">
-                    <p style={{ fontWeight: "bold" }}>Passionate full-stack web developer and a Computer scientist with over 3 years of experience. Ready to learn, explore current technologies, provide best backend and frontend services.</p>
+                <div className="section-title text-center mb-4">
+                    <h2>{data.headerTitle}</h2>
+                    <p className="lead">{data.sectionTitle}</p>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4">
-                        <div className="card shadow">
-                            <img src={rony} className="img-fluid" alt="" />
+                    <div className="col-lg-4 d-flex justify-content-center mb-4 mb-lg-0">
+                        <div className="profile-card">
+                            <img src={rony} className="img-fluid rounded-circle" alt="Ronald Kimeli" />
                         </div>
                     </div>
-                    <div className="col-lg-8 pt-4 pt-lg-0 content">
-                        <div className="card" style={{ justifyContent: 'center', textAlign: 'center', marginBottom: '10px' }}>
-                            <h3 style={{ fontWeight: 'bold', textTransform: "capitalize" }}>Full Stack Web Developer</h3>
+                    <div className="col-lg-8">
+                        <div className="text-center mb-4">
+                            <h3 className="text-success fw-bold">{data.role}</h3>
                         </div>
-                        <div className="card" style={{ marginBottom: '10px', border: '1px solid #dee2e6' }}>
-                            <p style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                                Experienced in PHP/Laravel, Nuxt/React js, and jQuery. Also, worked extensively with HTML, CSS, JavaScript and Python.
-                            </p>
-                        </div>
-                        <div className="card" style={{ marginBottom: '10px', border: '1px solid #dee2e6' }}>
-                            <div className="row" style={{ margin: '4px' }}>
-                                <div className="col-lg-6">
-                                    <ul>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Name: </strong>Ronald Kimeli</li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Education Level:</strong> Degree</li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Email:</strong> kimeliryans@gmail.com</li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-6">
-                                    <ul>
-                                    <li><i className="bi bi-rounded-right" /> <strong>Phone:</strong> +254 798 298834</li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>Degree:</strong> Computer Science</li>
-                                        <li><i className="bi bi-rounded-right" /> <strong>City:</strong> Nairobi, Kenya</li>
-                                    </ul>
+
+                        <p className="text-center mb-4 fw-bold">
+                            {data.experience}
+                        </p>
+
+                        <div className="info-card card border-light mb-4">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-lg-6">
+                                        <ul className="list-unstyled">
+                                            <li><i className="bi bi-chevron-right"></i> <strong>Name:</strong> {data.contactInfo.name}</li>
+                                            <li><i className="bi bi-chevron-right"></i> <strong>Education Level:</strong> {data.contactInfo.educationLevel}</li>
+                                            <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> {data.contactInfo.email}</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <ul className="list-unstyled">
+                                            <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> {data.contactInfo.phone}</li>
+                                            <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> {data.contactInfo.degree}</li>
+                                            <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> {data.contactInfo.city}</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="card" style={{ marginBottom: '10px', border: '1px solid #dee2e6' }}>
-                            <p style={{ fontWeight: "bold", textAlign: 'center' }}>
-                                My inspiration is contributing to SEO friendly and optimized Backend systems to your current team.
-                            </p>
-                        </div>
+                        <p className="text-center fw-bold">
+                            {data.inspiration}
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default About;
+
+
